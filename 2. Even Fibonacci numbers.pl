@@ -16,7 +16,6 @@ sub fib {
     my $r = shift;
     my @arr = @$r;
     my $x3 = $arr[-1] + $arr[-2];
-    # print "$x3\n";
     if ($x3 > $limit) {
         return sum(grep { $_ % 2 == 0 } @arr);
     } else {
